@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGym Career - Giải Pháp Tuyển Dụng & Phát Triển Nhân Tài IT</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <style>
+        /* Custom Material Styling */
+        :root {
+            --codegym-blue: #0056b3;
+            --codegym-orange: #ff6f00;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+            color: #ffffff;
+            padding: 100px 0 80px 0;
+        }
+        .section-heading {
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background-color: var(--codegym-orange);
+            border-radius: 2px;
+        }
+        .card-feature {
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15) !important;
+        }
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        footer {
+            background-color: #1c2331;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark blue darken-3 fixed-top scrolling-navbar z-depth-1">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#"><i class="fas fa-code mr-2"></i>CodeGym Career</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#hero">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Dịch Vụ Tuyển Dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#candidates">Dành Cho Lập Trình Viên</a>
+                    </li>
+                    <li class="nav-item ml-lg-3">
+                        <a href="#contact" class="btn btn-warning btn-rounded btn-sm waves-effect waves-light font-weight-bold">Liên Hệ Tấn Công</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section z-depth-1-half">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-7 text-left">
+                    <span class="badge badge-warning mb-3 px-3 py-2 text-uppercase font-weight-bold z-depth-1">Giải pháp nhân sự IT toàn diện</span>
+                    <h1 class="display-4 font-weight-bold mb-4">Kết Nối Doanh Nghiệp & Nhân Tài Lập Trình Thực Chiến</h1>
+                    <p class="lead mb-4 text-white-50">
+                        CodeGym Career cung cấp nguồn nhân lực CNTT chất lượng cao, vững tay nghề, đáp ứng ngay nhu cầu tuyển dụng khắt khe của doanh nghiệp mà không tốn chi phí đào tạo lại.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <a href="#contact" class="btn btn-amber btn-lg m-0 mr-3 mb-3 waves-effect waves-light font-weight-bold">
+                            <i class="fas fa-briefcase mr-2"></i>Tuyển Dụng Ngay
+                        </a>
+                        <a href="#services" class="btn btn-outline-white btn-lg m-0 mb-3 waves-effect">
+                            <i class="fas fa-info-circle mr-2"></i>Tìm Hiểu Dịch Vụ
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block text-center">
+                    <img src="https://mdbootstrap.com/img/illustrations/app-user-color.svg" alt="CodeGym Career Illustration" class="img-fluid animated pulse infinite slow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="container mt-n4 relative-top z-depth-2 bg-white rounded p-4">
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-3 mb-md-0 border-right">
+                <h2 class="font-weight-bold blue-text mb-0">98%</h2>
+                <small class="text-muted text-uppercase">Học viên có việc làm ngay</small>
+            </div>
+            <div class="col-md-3 col-6 mb-3 mb-md-0 border-right">
+                <h2 class="font-weight-bold blue-text mb-0">500+</h2>
+                <small class="text-muted text-uppercase">Doanh nghiệp đối tác</small>
+            </div>
+            <div class="col-md-3 col-6">
+                <h2 class="font-weight-bold blue-text mb-0">5,000+</h2>
+                <small class="text-muted text-uppercase">Lập trình viên tốt nghiệp</small>
+            </div>
+            <div class="col-md-3 col-6">
+                <h2 class="font-weight-bold blue-text mb-0">100%</h2>
+                <small class="text-muted text-uppercase">Cam kết chất lượng</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES / VALUE PROPOSITION -->
+    <section id="services" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center section-heading">Tại Sao Chọn CodeGym Career?</h2>
+            <p class="text-center text-muted max-width-600 mx-auto mb-5">
+                Mô hình đào tạo BootCamp thực chiến giúp học viên cọ xát với dự án thực tế, sẵn sàng gia nhập đội ngũ phát triển của doanh nghiệp.
+            </p>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-feature h-100 z-depth-1 p-4 text-center">
+                        <div class="icon-box blue lighten-5 text-primary">
+                            <i class="fas fa-user-check fa-2x"></i>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Ứng Viên Thực Chiến</h4>
+                        <p class="text-muted">
+                            Học viên được làm việc trên các hệ thống thật, thành thạo Git, Agile/Scrum và quy trình phát triển phần mềm chuẩn công nghiệp.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card card-feature h-100 z-depth-1 p-4 text-center">
+                        <div class="icon-box amber lighten-5 orange-text">
+                            <i class="fas fa-rocket fa-2x"></i>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Tuyển Dụng Nhanh Chóng</h4>
+                        <p class="text-muted">
+                            Tiết kiệm đến 70% thời gian và chi phí tuyển dụng nhờ mạng lưới ứng viên IT chất lượng cao đã qua kiểm định năng lực nghiêm ngặt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card card-feature h-100 z-depth-1 p-4 text-center">
+                        <div class="icon-box green lighten-5 green-text">
+                            <i class="fas fa-handshake fa-2x"></i>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Đồng Hành Lâu Dài</h4>
+                        <p class="text-muted">
+                            Hỗ trợ doanh nghiệp bảo hành nhân sự, theo sát lộ trình hòa nhập và phát triển sự nghiệp của ứng viên tại môi trường mới.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-5 grey lighten-4">
+        <div class="container">
+            <h2 class="text-center section-heading">Cảm Nhận Từ Doanh Nghiệp Đối Tác</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Material Card Testimonial -->
+                    <div class="card z-depth-1 border-0">
+                        <div class="card-body p-5 text-center">
+                            <i class="fas fa-quote-left fa-3x blue-text mb-4 opacity-50"></i>
+                            <p class="lead font-italic text-muted mb-4">
+                                "Các lập trình viên từ CodeGym khi gia nhập công ty chúng tôi tiếp cận dự án rất nhanh. Tư duy logic tốt và phong cách làm việc chuyên nghiệp là điểm cộng lớn của các bạn."
+                            </p>
+                            <h5 class="font-weight-bold mb-1">Giám đốc Kỹ thuật (CTO)</h5>
+                            <small class="text-uppercase text-primary font-weight-bold">Công ty Phần mềm Đa quốc gia</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / CTA FORM -->
+    <section id="contact" class="py-5 white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="font-weight-bold mb-3">Sẵn Sàng Bứt Phá Đội Ngũ Nhân Sự IT?</h2>
+                    <p class="text-muted mb-4">
+                        Để lại thông tin tư vấn nhu cầu tuyển dụng hoặc kết nối hợp tác, đội ngũ CodeGym Career sẽ liên hệ lại trong vòng 24h làm việc.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success mr-2"></i> Đánh giá năng lực ứng viên miễn phí</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success mr-2"></i> Đặt hàng đào tạo theo yêu cầu riêng</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success mr-2"></i> Tổ chức Ngày hội tuyển dụng (Job Fair)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Material Form Card -->
+                    <div class="card z-depth-2 p-4">
+                        <div class="card-body">
+                            <h4 class="font-weight-bold text-center mb-4 blue-text">Đăng Ký Tư Tấn Tuyển Dụng</h4>
+                            <form>
+                                <div class="md-form">
+                                    <i class="fas fa-building prefix grey-text"></i>
+                                    <input type="text" id="form-company" class="form-control">
+                                    <label for="form-company">Tên Doanh nghiệp / Tổ chức</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-user prefix grey-text"></i>
+                                    <input type="text" id="form-name" class="form-control">
+                                    <label for="form-name">Họ và tên người đại diện</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
+                                    <input type="email" id="form-email" class="form-control">
+                                    <label for="form-email">Email liên hệ</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-phone prefix grey-text"></i>
+                                    <input type="text" id="form-phone" class="form-control">
+                                    <label for="form-phone">Số điện thoại</label>
+                                </div>
+                                <button type="button" class="btn btn-blue btn-block font-weight-bold waves-effect waves-light mt-4">
+                                    Gửi Yêu Cầu Liên Hệ
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 mb-3">
+                    <h5 class="text-uppercase font-weight-bold"><i class="fas fa-code mr-2"></i>CodeGym Career</h5>
+                    <p class="text-white-50">Hệ thống đào tạo lập trình hiện đại, cung ứng nguồn nhân lực IT chất lượng cao cho thị trường Việt Nam và quốc tế.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3 ml-auto">
+                    <h5 class="text-uppercase font-weight-bold">Liên Kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white-50">Về CodeGym</a></li>
+                        <li><a href="#services" class="text-white-50">Dịch vụ tuyển dụng</a></li>
+                        <li><a href="#contact" class="text-white-50">Doanh nghiệp đối tác</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 border-top border-secondary">
+            © 2026 CodeGym Career. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>
